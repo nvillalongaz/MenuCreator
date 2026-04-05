@@ -1,0 +1,772 @@
+[
+  {
+    "plato": "Macarrones con tomate, carne picada y queso",
+    "tipo_comida": "Comida",
+    "ingredientes_base": [
+      {
+        "nombre": "Macarrones",
+        "cantidad": 0.1,
+        "unidad": "kg"
+      },
+      {
+        "nombre": "Tomate frito",
+        "cantidad": 0.1,
+        "unidad": "kg"
+      },
+      {
+        "nombre": "Carne picada",
+        "cantidad": 0.05,
+        "unidad": "kg"
+      },
+      {
+        "nombre": "Queso",
+        "cantidad": null,
+        "unidad": null
+      }
+    ],
+    "ingredientes_celiacos": [
+      {
+        "nombre": "Macarrones sin gluten",
+        "cantidad": 0.1,
+        "unidad": "kg"
+      },
+      {
+        "nombre": "Tomate frito",
+        "cantidad": 0.1,
+        "unidad": "kg"
+      },
+      {
+        "nombre": "Carne picada",
+        "cantidad": 0.05,
+        "unidad": "kg"
+      },
+      {
+        "nombre": "Queso",
+        "cantidad": null,
+        "unidad": null
+      }
+    ],
+    "ingredientes_lactosa": [
+      {
+        "nombre": "Macarrones",
+        "cantidad": 0.1,
+        "unidad": "kg"
+      },
+      {
+        "nombre": "Tomate frito",
+        "cantidad": 0.1,
+        "unidad": "kg"
+      },
+      {
+        "nombre": "Carne picada",
+        "cantidad": 0.05,
+        "unidad": "kg"
+      },
+      {
+        "nombre": "Queso sin lactosa",
+        "cantidad": null,
+        "unidad": null
+      }
+    ]
+  },
+  {
+    "plato": "Sopa de pollo con fideos y yogur",
+    "tipo_comida": "Comida",
+    "ingredientes_base": [
+      {
+        "nombre": "Caldo de pollo",
+        "cantidad": 0.25,
+        "unidad": "l"
+      },
+      {
+        "nombre": "Fideos",
+        "cantidad": 0.025,
+        "unidad": "kg"
+      },
+      {
+        "nombre": "Pechugas de pollo",
+        "cantidad": 2.25,
+        "unidad": "ud"
+      },
+      {
+        "nombre": "Yogur",
+        "cantidad": 1,
+        "unidad": "ud"
+      }
+    ],
+    "ingredientes_celiacos": [
+      {
+        "nombre": "Caldo de pollo",
+        "cantidad": 0.25,
+        "unidad": "l"
+      },
+      {
+        "nombre": "Fideos sin gluten",
+        "cantidad": 0.025,
+        "unidad": "kg"
+      },
+      {
+        "nombre": "Pechugas de pollo",
+        "cantidad": 2.25,
+        "unidad": "ud"
+      },
+      {
+        "nombre": "Yogur",
+        "cantidad": 1,
+        "unidad": "ud"
+      }
+    ],
+    "ingredientes_lactosa": [
+      {
+        "nombre": "Caldo de pollo",
+        "cantidad": 0.25,
+        "unidad": "l"
+      },
+      {
+        "nombre": "Fideos",
+        "cantidad": 0.025,
+        "unidad": "kg"
+      },
+      {
+        "nombre": "Pechugas de pollo",
+        "cantidad": 2.25,
+        "unidad": "ud"
+      },
+      {
+        "nombre": "Yogur sin lactosa",
+        "cantidad": 1,
+        "unidad": "ud"
+      }
+    ]
+  },
+  {
+    "plato": "Alubias verdes con patata, jamón y cabezada",
+    "tipo_comida": "Comida",
+    "ingredientes_base": [
+      {
+        "nombre": "Alubia verde (escurrido)",
+        "cantidad": 0.5,
+        "unidad": "bote"
+      },
+      {
+        "nombre": "Patata",
+        "cantidad": 0.07,
+        "unidad": "kg"
+      },
+      {
+        "nombre": "Jamón Serrano (taquitos)",
+        "cantidad": 0.025,
+        "unidad": "kg"
+      },
+      {
+        "nombre": "Ajo",
+        "cantidad": null,
+        "unidad": "cabeza"
+      },
+      {
+        "nombre": "Cabezada",
+        "cantidad": 1.5,
+        "unidad": "filete"
+      },
+      {
+        "nombre": "Yogur",
+        "cantidad": 1,
+        "unidad": "ud"
+      }
+    ],
+    "ingredientes_celiacos": [
+      {
+        "nombre": "Alubia verde (escurrido)",
+        "cantidad": 0.5,
+        "unidad": "bote"
+      },
+      {
+        "nombre": "Patata",
+        "cantidad": 0.07,
+        "unidad": "kg"
+      },
+      {
+        "nombre": "Jamón Serrano (taquitos)",
+        "cantidad": 0.025,
+        "unidad": "kg"
+      },
+      {
+        "nombre": "Ajo",
+        "cantidad": null,
+        "unidad": "cabeza"
+      },
+      {
+        "nombre": "Cabezada",
+        "cantidad": 1.5,
+        "unidad": "filete"
+      },
+      {
+        "nombre": "Yogur",
+        "cantidad": 1,
+        "unidad": "ud"
+      }
+    ],
+    "ingredientes_lactosa": [
+      {
+        "nombre": "Alubia verde (escurrido)",
+        "cantidad": 0.5,
+        "unidad": "bote"
+      },
+      {
+        "nombre": "Patata",
+        "cantidad": 0.07,
+        "unidad": "kg"
+      },
+      {
+        "nombre": "Jamón Serrano (taquitos)",
+        "cantidad": 0.025,
+        "unidad": "kg"
+      },
+      {
+        "nombre": "Ajo",
+        "cantidad": null,
+        "unidad": "cabeza"
+      },
+      {
+        "nombre": "Cabezada",
+        "cantidad": 1.5,
+        "unidad": "filete"
+      },
+      {
+        "nombre": "Yogur sin lactosa",
+        "cantidad": 1,
+        "unidad": "ud"
+      }
+    ]
+  },
+  {
+    "plato": "Hamburguesa completa con patatas y postre",
+    "tipo_comida": "Cena",
+    "ingredientes_base": [
+      {
+        "nombre": "Pan de Hamburguesa",
+        "cantidad": 1.5,
+        "unidad": "par"
+      },
+      {
+        "nombre": "Hamburguesas",
+        "cantidad": 2,
+        "unidad": "ud"
+      },
+      {
+        "nombre": "Tomate natural",
+        "cantidad": 0.2,
+        "unidad": "ud"
+      },
+      {
+        "nombre": "Cebolla",
+        "cantidad": 0.1,
+        "unidad": "ud"
+      },
+      {
+        "nombre": "Tranchetes",
+        "cantidad": 1.5,
+        "unidad": "ud"
+      },
+      {
+        "nombre": "Bacon",
+        "cantidad": 1.5,
+        "unidad": "ud"
+      },
+      {
+        "nombre": "Mahonesa",
+        "cantidad": 0.015,
+        "unidad": "l"
+      },
+      {
+        "nombre": "Ketchup",
+        "cantidad": 0.015,
+        "unidad": "l"
+      },
+      {
+        "nombre": "Lechuga",
+        "cantidad": 0.05,
+        "unidad": "ud"
+      },
+      {
+        "nombre": "Copa de chocolate",
+        "cantidad": 1,
+        "unidad": "ud"
+      }
+    ],
+    "ingredientes_celiacos": [
+      {
+        "nombre": "Pan celiaco",
+        "cantidad": 2,
+        "unidad": "ud"
+      },
+      {
+        "nombre": "Hamburguesas",
+        "cantidad": 2,
+        "unidad": "ud"
+      },
+      {
+        "nombre": "Tomate natural",
+        "cantidad": 0.2,
+        "unidad": "ud"
+      },
+      {
+        "nombre": "Cebolla",
+        "cantidad": 0.1,
+        "unidad": "ud"
+      },
+      {
+        "nombre": "Tranchetes",
+        "cantidad": 1.5,
+        "unidad": "ud"
+      },
+      {
+        "nombre": "Bacon",
+        "cantidad": 1.5,
+        "unidad": "ud"
+      },
+      {
+        "nombre": "Mahonesa",
+        "cantidad": 0.015,
+        "unidad": "l"
+      },
+      {
+        "nombre": "Ketchup",
+        "cantidad": 0.015,
+        "unidad": "l"
+      },
+      {
+        "nombre": "Lechuga",
+        "cantidad": 0.05,
+        "unidad": "ud"
+      },
+      {
+        "nombre": "Gelatina",
+        "cantidad": 1,
+        "unidad": "ud"
+      }
+    ],
+    "ingredientes_lactosa": [
+      {
+        "nombre": "Pan de Hamburguesa",
+        "cantidad": 1.5,
+        "unidad": "par"
+      },
+      {
+        "nombre": "Hamburguesas",
+        "cantidad": 2,
+        "unidad": "ud"
+      },
+      {
+        "nombre": "Tomate natural",
+        "cantidad": 0.2,
+        "unidad": "ud"
+      },
+      {
+        "nombre": "Cebolla",
+        "cantidad": 0.1,
+        "unidad": "ud"
+      },
+      {
+        "nombre": "Tranchetes sin lactosa",
+        "cantidad": 1.5,
+        "unidad": "ud"
+      },
+      {
+        "nombre": "Bacon",
+        "cantidad": 1.5,
+        "unidad": "ud"
+      },
+      {
+        "nombre": "Mahonesa",
+        "cantidad": 0.015,
+        "unidad": "l"
+      },
+      {
+        "nombre": "Ketchup",
+        "cantidad": 0.015,
+        "unidad": "l"
+      },
+      {
+        "nombre": "Lechuga",
+        "cantidad": 0.05,
+        "unidad": "ud"
+      },
+      {
+        "nombre": "Copa de chocolate sin lactosa",
+        "cantidad": 1,
+        "unidad": "ud"
+      }
+    ]
+  },
+  {
+    "plato": "Desayuno (leche, cacao, galletas y mermelada)",
+    "tipo_comida": "Desayuno",
+    "ingredientes_base": [
+      {
+        "nombre": "Leche",
+        "cantidad": 0.25,
+        "unidad": "l"
+      },
+      {
+        "nombre": "Cola Cao",
+        "cantidad": 0.015,
+        "unidad": "kg"
+      },
+      {
+        "nombre": "Galletas",
+        "cantidad": 8,
+        "unidad": "ud"
+      },
+      {
+        "nombre": "Mermelada",
+        "cantidad": 0.025,
+        "unidad": "kg"
+      }
+    ],
+    "ingredientes_celiacos": [
+      {
+        "nombre": "Leche",
+        "cantidad": 0.25,
+        "unidad": "l"
+      },
+      {
+        "nombre": "Cola Cao",
+        "cantidad": 0.015,
+        "unidad": "kg"
+      },
+      {
+        "nombre": "Galletas sin gluten",
+        "cantidad": 8,
+        "unidad": "ud"
+      },
+      {
+        "nombre": "Mermelada",
+        "cantidad": 0.025,
+        "unidad": "kg"
+      }
+    ],
+    "ingredientes_lactosa": [
+      {
+        "nombre": "Leche sin lactosa",
+        "cantidad": 0.25,
+        "unidad": "l"
+      },
+      {
+        "nombre": "Cola Cao",
+        "cantidad": 0.015,
+        "unidad": "kg"
+      },
+      {
+        "nombre": "Galletas",
+        "cantidad": 8,
+        "unidad": "ud"
+      },
+      {
+        "nombre": "Mermelada",
+        "cantidad": 0.025,
+        "unidad": "kg"
+      }
+    ]
+  },
+  {
+    "plato": "Puré de patata con salchichas y gelatina",
+    "tipo_comida": "Cena",
+    "ingredientes_base": [
+      {
+        "nombre": "Puré de patata",
+        "cantidad": null,
+        "unidad": null
+      },
+      {
+        "nombre": "Leche",
+        "cantidad": null,
+        "unidad": null
+      },
+      {
+        "nombre": "Salchichas Frankfurt",
+        "cantidad": 4,
+        "unidad": "ud"
+      },
+      {
+        "nombre": "Gelatina",
+        "cantidad": 1,
+        "unidad": "ud"
+      }
+    ],
+    "ingredientes_celiacos": [
+      {
+        "nombre": "Puré de patata",
+        "cantidad": null,
+        "unidad": null
+      },
+      {
+        "nombre": "Leche",
+        "cantidad": null,
+        "unidad": null
+      },
+      {
+        "nombre": "Salchichas Frankfurt",
+        "cantidad": 4,
+        "unidad": "ud"
+      },
+      {
+        "nombre": "Gelatina",
+        "cantidad": 1,
+        "unidad": "ud"
+      }
+    ],
+    "ingredientes_lactosa": [
+      {
+        "nombre": "Puré de patata",
+        "cantidad": null,
+        "unidad": null
+      },
+      {
+        "nombre": "Leche sin lactosa",
+        "cantidad": null,
+        "unidad": null
+      },
+      {
+        "nombre": "Salchichas Frankfurt",
+        "cantidad": 4,
+        "unidad": "ud"
+      },
+      {
+        "nombre": "Gelatina",
+        "cantidad": 1,
+        "unidad": "ud"
+      }
+    ]
+  },
+  {
+    "plato": "Arroz con pollo, verduras y melocotón en almíbar",
+    "tipo_comida": "Comida",
+    "ingredientes_base": [
+      {
+        "nombre": "Arroz",
+        "cantidad": 0.08,
+        "unidad": "kg"
+      },
+      {
+        "nombre": "Filete de pechuga de pollo",
+        "cantidad": 1,
+        "unidad": "ud"
+      },
+      {
+        "nombre": "Ajo",
+        "cantidad": null,
+        "unidad": "cabeza"
+      },
+      {
+        "nombre": "Cebolla",
+        "cantidad": 0.08,
+        "unidad": "ud"
+      },
+      {
+        "nombre": "Tomate frito",
+        "cantidad": 0.1,
+        "unidad": "kg"
+      },
+      {
+        "nombre": "Pimientos rojos en bote",
+        "cantidad": null,
+        "unidad": "bote"
+      },
+      {
+        "nombre": "Melocotón en almíbar",
+        "cantidad": 2,
+        "unidad": "ud"
+      }
+    ],
+    "ingredientes_celiacos": [
+      {
+        "nombre": "Arroz",
+        "cantidad": 0.08,
+        "unidad": "kg"
+      },
+      {
+        "nombre": "Filete de pechuga de pollo",
+        "cantidad": 1,
+        "unidad": "ud"
+      },
+      {
+        "nombre": "Ajo",
+        "cantidad": null,
+        "unidad": "cabeza"
+      },
+      {
+        "nombre": "Cebolla",
+        "cantidad": 0.08,
+        "unidad": "ud"
+      },
+      {
+        "nombre": "Tomate frito",
+        "cantidad": 0.1,
+        "unidad": "kg"
+      },
+      {
+        "nombre": "Pimientos rojos en bote",
+        "cantidad": null,
+        "unidad": "bote"
+      },
+      {
+        "nombre": "Melocotón en almíbar",
+        "cantidad": 2,
+        "unidad": "ud"
+      }
+    ],
+    "ingredientes_lactosa": [
+      {
+        "nombre": "Arroz",
+        "cantidad": 0.08,
+        "unidad": "kg"
+      },
+      {
+        "nombre": "Filete de pechuga de pollo",
+        "cantidad": 1,
+        "unidad": "ud"
+      },
+      {
+        "nombre": "Ajo",
+        "cantidad": null,
+        "unidad": "cabeza"
+      },
+      {
+        "nombre": "Cebolla",
+        "cantidad": 0.08,
+        "unidad": "ud"
+      },
+      {
+        "nombre": "Tomate frito",
+        "cantidad": 0.1,
+        "unidad": "kg"
+      },
+      {
+        "nombre": "Pimientos rojos en bote",
+        "cantidad": null,
+        "unidad": "bote"
+      },
+      {
+        "nombre": "Melocotón en almíbar",
+        "cantidad": 2,
+        "unidad": "ud"
+      }
+    ]
+  },
+  {
+    "plato": "Manzana",
+    "tipo_comida": "Merienda",
+    "ingredientes_base": [
+      {
+        "nombre": "Manzana",
+        "cantidad": 1,
+        "unidad": "ud"
+      }
+    ],
+    "ingredientes_celiacos": [
+      {
+        "nombre": "Manzana",
+        "cantidad": 1,
+        "unidad": "ud"
+      }
+    ],
+    "ingredientes_lactosa": [
+      {
+        "nombre": "Manzana",
+        "cantidad": 1,
+        "unidad": "ud"
+      }
+    ]
+  },
+  {
+    "plato": "Platano",
+    "tipo_comida": "Merienda",
+    "ingredientes_base": [
+      {
+        "nombre": "Platano",
+        "cantidad": 1,
+        "unidad": "ud"
+      }
+    ],
+    "ingredientes_celiacos": [
+      {
+        "nombre": "Platano",
+        "cantidad": 1,
+        "unidad": "ud"
+      }
+    ],
+    "ingredientes_lactosa": [
+      {
+        "nombre": "Platano",
+        "cantidad": 1,
+        "unidad": "ud"
+      }
+    ]
+  },
+  {
+    "plato": "Mandarina",
+    "tipo_comida": "Merienda",
+    "ingredientes_base": [
+      {
+        "nombre": "Mandarina",
+        "cantidad": 1,
+        "unidad": "ud"
+      }
+    ],
+    "ingredientes_celiacos": [
+      {
+        "nombre": "Mandarina",
+        "cantidad": 1,
+        "unidad": "ud"
+      }
+    ],
+    "ingredientes_lactosa": [
+      {
+        "nombre": "Mandarina",
+        "cantidad": 1,
+        "unidad": "ud"
+      }
+    ]
+  },
+  {
+    "plato": "Bocadillo de nocilla",
+    "tipo_comida": "Merienda",
+    "ingredientes_base": [
+      {
+        "nombre": "Pan bimbo",
+        "cantidad": 2,
+        "unidad": "rebanada"
+      },
+      {
+        "nombre": "Nocilla",
+        "cantidad": 0.035,
+        "unidad": "ud"
+      }
+    ],
+    "ingredientes_celiacos": [
+      {
+        "nombre": "Pan celiaco",
+        "cantidad": 2,
+        "unidad": "rebanada"
+      },
+      {
+        "nombre": "Nocilla",
+        "cantidad": 0.035,
+        "unidad": "ud"
+      }
+    ],
+    "ingredientes_lactosa": [
+      {
+        "nombre": "Pan bimbo",
+        "cantidad": 2,
+        "unidad": "rebanada"
+      },
+      {
+        "nombre": "Nocilla",
+        "cantidad": 0.035,
+        "unidad": "ud"
+      }
+    ]
+  }
+]
