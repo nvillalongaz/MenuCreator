@@ -30,13 +30,14 @@ def main(plan_data: list, maestro_data: list) -> dict:
                 if not plato_nombre or plato_nombre not in platos_map: 
                     continue
                 
-                # Calcular número final de personas para esta comida puntual
-                personas_comida = personas_base + ajuste
+                # Permitir que la comida sobreescriba los contadores base
+                pax_base_comida = config.get("personas", personas_base)
+                personas_comida = pax_base_comida + ajuste
                 if personas_comida <= 0: 
                     continue
                 
-                celiacos = dia_plan.get("celiacos", 0)
-                lactosos = dia_plan.get("lactosos", 0)
+                celiacos = config.get("celiacos", dia_plan.get("celiacos", 0))
+                lactosos = config.get("lactosos", dia_plan.get("lactosos", 0))
                 personas_sin_dieta = max(0, personas_comida - celiacos - lactosos)
                 
                 plato = platos_map[plato_nombre]

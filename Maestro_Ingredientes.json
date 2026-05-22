@@ -768,5 +768,75 @@
         "unidad": "ud"
       }
     ]
+  },
+  {
+    "plato": "Bolsa de Picnic (bocadillo, fruta, agua)",
+    "tipo_comida": "Excursión",
+    "ingredientes_base": [
+      {
+        "nombre": "Pan bimbo",
+        "cantidad": 2,
+        "unidad": "rebanada"
+      },
+      {
+        "nombre": "Fiambre de pavo",
+        "cantidad": 0.05,
+        "unidad": "kg"
+      },
+      {
+        "nombre": "Manzana",
+        "cantidad": 1,
+        "unidad": "ud"
+      },
+      {
+        "nombre": "Botellín de agua",
+        "cantidad": 1,
+        "unidad": "ud"
+      }
+    ],
+    "ingredientes_celiacos": [
+      {
+        "nombre": "Pan celiaco",
+        "cantidad": 2,
+        "unidad": "rebanada"
+      },
+      {
+        "nombre": "Fiambre de pavo",
+        "cantidad": 0.05,
+        "unidad": "kg"
+      },
+      {
+        "nombre": "Manzana",
+        "cantidad": 1,
+        "unidad": "ud"
+      },
+      {
+        "nombre": "Botellín de agua",
+        "cantidad": 1,
+        "unidad": "ud"
+      }
+    ],
+    "ingredientes_lactosa": [
+      {
+        "nombre": "Pan bimbo",
+        "cantidad": 2,
+        "unidad": "rebanada"
+      },
+      {
+        "nombre": "Fiambre de pavo",
+        "cantidad": 0.05,
+        "unidad": "kg"
+      },
+      {
+        "nombre": "Manzana",
+        "cantidad": 1,
+        "unidad": "ud"
+      },
+      {
+        "nombre": "Botellín de agua",
+        "cantidad": 1,
+        "unidad": "ud"
+      }
+    ]
   }
 ]

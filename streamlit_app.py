@@ -19,7 +19,7 @@ def load_data():
 
 maestro = load_data()
 
-opciones_comida = {"Desayuno": ["-- Ninguno --"], "Comida": ["-- Ninguno --"], "Merienda": ["-- Ninguno --"], "Cena": ["-- Ninguno --"]}
+opciones_comida = {"Desayuno": ["-- Ninguno --"], "Comida": ["-- Ninguno --"], "Merienda": ["-- Ninguno --"], "Cena": ["-- Ninguno --"], "Excursión": ["-- Ninguno --"]}
 if maestro:
     for plato in maestro:
         tipo = plato.get("tipo_comida")
@@ -54,16 +54,35 @@ for i, col in enumerate(cols):
             }
             
             st.markdown("<hr style='margin: 0.5rem 0'>", unsafe_allow_html=True)
-            for tipo in ["Desayuno", "Comida", "Merienda", "Cena"]:
+            for tipo in ["Desayuno", "Comida", "Merienda", "Cena", "Excursión"]:
                 with st.expander(f"🍽️ {tipo}", expanded=(tipo=="Comida")):
                     seleccion = st.selectbox("Plato", options=opciones_comida[tipo], key=f"sel_{i}_{tipo}", label_visibility="collapsed")
-                    ajuste = st.number_input("Ajuste (extra/ausentes)", value=0, key=f"ajuste_{i}_{tipo}", help="Personas adicionales (+) o ausentes (-) para esta comida")
+                    if tipo == "Excursión":
+                        e1, e2, e3 = st.columns(3)
+                        with e1:
+                            exc_pax = st.number_input("Base Exc.", min_value=0, value=0, key=f"exc_pax_{i}")
+                        with e2:
+                            exc_cel = st.number_input("Celíacos", min_value=0, value=0, key=f"exc_cel_{i}")
+                        with e3:
+                            exc_lac = st.number_input("Lactosos", min_value=0, value=0, key=f"exc_lac_{i}")
+                        ajuste = 0
+                    else:
+                        ajuste = st.number_input("Ajuste (extra/ausentes)", value=0, key=f"ajuste_{i}_{tipo}", help="Personas adicionales (+) o ausentes (-) para esta comida")
                     
                     if seleccion != "-- Ninguno --":
-                        dia_plan["comidas"][tipo] = {
-                            "plato": seleccion,
-                            "ajuste": ajuste
-                        }
+                        if tipo == "Excursión":
+                            dia_plan["comidas"][tipo] = {
+                                "plato": seleccion,
+                                "personas": exc_pax,
+                                "celiacos": exc_cel,
+                                "lactosos": exc_lac,
+                                "ajuste": 0
+                            }
+                        else:
+                            dia_plan["comidas"][tipo] = {
+                                "plato": seleccion,
+                                "ajuste": ajuste
+                            }
                     
             plan.append(dia_plan)
 
