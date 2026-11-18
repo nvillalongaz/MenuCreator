@@ -320,8 +320,13 @@
     "ingredientes_base": [
       {
         "nombre": "Sopa sobre",
-        "cantidad": 0.26,
+        "cantidad": 0.33,
         "unidad": "l"
+      },
+      {
+        "nombre": "Fideos",
+        "cantidad": 0.02,
+        "unidad": "kg"
       },
       {
         "nombre": "Panceta sazonada/adobada",
@@ -329,7 +334,7 @@
         "unidad": "kg"
       },
       {
-        "nombre": "Platano",
+        "nombre": "Plátano",
         "cantidad": 1.0,
         "unidad": "ud"
       }
@@ -337,8 +342,13 @@
     "ingredientes_celiacos": [
       {
         "nombre": "Sopa sobre sin gluten (o brik caldo)",
-        "cantidad": 0.26,
+        "cantidad": 0.33,
         "unidad": "l"
+      },
+      {
+        "nombre": "Fideos sin gluten",
+        "cantidad": 0.02,
+        "unidad": "kg"
       },
       {
         "nombre": "Panceta sazonada/adobada",
@@ -346,7 +356,7 @@
         "unidad": "kg"
       },
       {
-        "nombre": "Platano",
+        "nombre": "Plátano",
         "cantidad": 1.0,
         "unidad": "ud"
       }
@@ -354,8 +364,13 @@
     "ingredientes_lactosa": [
       {
         "nombre": "Sopa sobre",
-        "cantidad": 0.26,
+        "cantidad": 0.33,
         "unidad": "l"
+      },
+      {
+        "nombre": "Fideos",
+        "cantidad": 0.02,
+        "unidad": "kg"
       },
       {
         "nombre": "Panceta sazonada/adobada",
@@ -363,7 +378,7 @@
         "unidad": "kg"
       },
       {
-        "nombre": "Platano",
+        "nombre": "Plátano",
         "cantidad": 1.0,
         "unidad": "ud"
       }
@@ -404,7 +419,7 @@
         "unidad": "bolsa"
       },
       {
-        "nombre": "Pechuga pollo",
+        "nombre": "Pechuga de pollo",
         "cantidad": 0.16,
         "unidad": "kg"
       },
@@ -446,7 +461,7 @@
         "unidad": "bolsa"
       },
       {
-        "nombre": "Pechuga pollo",
+        "nombre": "Pechuga de pollo",
         "cantidad": 0.16,
         "unidad": "kg"
       },
@@ -488,7 +503,7 @@
         "unidad": "bolsa"
       },
       {
-        "nombre": "Pechuga pollo",
+        "nombre": "Pechuga de pollo",
         "cantidad": 0.16,
         "unidad": "kg"
       },
@@ -504,38 +519,38 @@
     "tipo_comida": "Merienda",
     "ingredientes_base": [
       {
-        "nombre": "Pan bimbo rebanada",
+        "nombre": "Pan bimbo",
         "cantidad": 2.0,
-        "unidad": "ud"
+        "unidad": "rebanada"
       },
       {
         "nombre": "Nocilla (sin frutos secos ni gluten)",
-        "cantidad": 0.03,
-        "unidad": "kg"
+        "cantidad": 0.035,
+        "unidad": "bote"
       }
     ],
     "ingredientes_celiacos": [
       {
-        "nombre": "Pan bimbo sin gluten rebanada",
+        "nombre": "Pan sin gluten",
         "cantidad": 2.0,
-        "unidad": "ud"
+        "unidad": "rebanada"
       },
       {
         "nombre": "Nocilla (sin frutos secos ni gluten)",
-        "cantidad": 0.03,
-        "unidad": "kg"
+        "cantidad": 0.035,
+        "unidad": "bote"
       }
     ],
     "ingredientes_lactosa": [
       {
-        "nombre": "Pan bimbo rebanada",
+        "nombre": "Pan bimbo",
         "cantidad": 2.0,
-        "unidad": "ud"
+        "unidad": "rebanada"
       },
       {
         "nombre": "Nocilla (sin frutos secos ni gluten)",
-        "cantidad": 0.03,
-        "unidad": "kg"
+        "cantidad": 0.035,
+        "unidad": "bote"
       }
     ]
   },
@@ -549,7 +564,7 @@
         "unidad": "ud"
       },
       {
-        "nombre": "Pechuga pollo",
+        "nombre": "Pechuga de pollo",
         "cantidad": 0.175,
         "unidad": "kg"
       },
@@ -596,7 +611,7 @@
         "unidad": "rebanada"
       },
       {
-        "nombre": "Pechuga pollo",
+        "nombre": "Pechuga de pollo",
         "cantidad": 0.175,
         "unidad": "kg"
       },
@@ -643,7 +658,7 @@
         "unidad": "ud"
       },
       {
-        "nombre": "Pechuga pollo",
+        "nombre": "Pechuga de pollo",
         "cantidad": 0.175,
         "unidad": "kg"
       },
@@ -819,21 +834,21 @@
     "tipo_comida": "Merienda",
     "ingredientes_base": [
       {
-        "nombre": "Melocoton",
+        "nombre": "Melocotón",
         "cantidad": 1.0,
         "unidad": "ud"
       }
     ],
     "ingredientes_celiacos": [
       {
-        "nombre": "Melocoton",
+        "nombre": "Melocotón",
         "cantidad": 1.0,
         "unidad": "ud"
       }
     ],
     "ingredientes_lactosa": [
       {
-        "nombre": "Melocoton",
+        "nombre": "Melocotón",
         "cantidad": 1.0,
         "unidad": "ud"
       }
@@ -914,12 +929,12 @@
         "unidad": "kg"
       },
       {
-        "nombre": "Cebollas",
-        "cantidad": 2.0,
+        "nombre": "Cebolla",
+        "cantidad": 0.1,
         "unidad": "ud"
       },
       {
-        "nombre": "Hamburguesa",
+        "nombre": "Hamburguesas",
         "cantidad": 2.0,
         "unidad": "ud"
       },
@@ -946,12 +961,12 @@
         "unidad": "kg"
       },
       {
-        "nombre": "Cebollas",
-        "cantidad": 2.0,
+        "nombre": "Cebolla",
+        "cantidad": 0.1,
         "unidad": "ud"
       },
       {
-        "nombre": "Hamburguesa",
+        "nombre": "Hamburguesas",
         "cantidad": 2.0,
         "unidad": "ud"
       },
@@ -978,12 +993,12 @@
         "unidad": "kg"
       },
       {
-        "nombre": "Cebollas",
-        "cantidad": 2.0,
+        "nombre": "Cebolla",
+        "cantidad": 0.1,
         "unidad": "ud"
       },
       {
-        "nombre": "Hamburguesa",
+        "nombre": "Hamburguesas",
         "cantidad": 2.0,
         "unidad": "ud"
       },
@@ -1199,12 +1214,12 @@
         "unidad": "kg"
       },
       {
-        "nombre": "Pimientos",
+        "nombre": "Pimiento",
         "cantidad": 0.02,
         "unidad": "kg"
       },
       {
-        "nombre": "Platano",
+        "nombre": "Plátano",
         "cantidad": 1.0,
         "unidad": "ud"
       }
@@ -1241,12 +1256,12 @@
         "unidad": "kg"
       },
       {
-        "nombre": "Pimientos",
+        "nombre": "Pimiento",
         "cantidad": 0.02,
         "unidad": "kg"
       },
       {
-        "nombre": "Platano",
+        "nombre": "Plátano",
         "cantidad": 1.0,
         "unidad": "ud"
       }
@@ -1283,12 +1298,12 @@
         "unidad": "kg"
       },
       {
-        "nombre": "Pimientos",
+        "nombre": "Pimiento",
         "cantidad": 0.02,
         "unidad": "kg"
       },
       {
-        "nombre": "Platano",
+        "nombre": "Plátano",
         "cantidad": 1.0,
         "unidad": "ud"
       }
@@ -1419,7 +1434,7 @@
         "unidad": "ud"
       },
       {
-        "nombre": "Atun en lata",
+        "nombre": "Atún",
         "cantidad": 0.03,
         "unidad": "kg"
       },
@@ -1456,7 +1471,7 @@
         "unidad": "ud"
       },
       {
-        "nombre": "Atun en lata",
+        "nombre": "Atún",
         "cantidad": 0.03,
         "unidad": "kg"
       },
@@ -1493,7 +1508,7 @@
         "unidad": "ud"
       },
       {
-        "nombre": "Atun en lata",
+        "nombre": "Atún",
         "cantidad": 0.03,
         "unidad": "kg"
       },
@@ -1600,12 +1615,12 @@
       },
       {
         "nombre": "Tomate frito",
-        "cantidad": 0.15,
+        "cantidad": 0.1,
         "unidad": "kg"
       },
       {
         "nombre": "Carne picada",
-        "cantidad": 0.06,
+        "cantidad": 0.05,
         "unidad": "kg"
       },
       {
@@ -1627,12 +1642,12 @@
       },
       {
         "nombre": "Tomate frito",
-        "cantidad": 0.15,
+        "cantidad": 0.1,
         "unidad": "kg"
       },
       {
         "nombre": "Carne picada",
-        "cantidad": 0.06,
+        "cantidad": 0.05,
         "unidad": "kg"
       },
       {
@@ -1654,16 +1669,16 @@
       },
       {
         "nombre": "Tomate frito",
-        "cantidad": 0.15,
+        "cantidad": 0.1,
         "unidad": "kg"
       },
       {
         "nombre": "Carne picada",
-        "cantidad": 0.06,
+        "cantidad": 0.05,
         "unidad": "kg"
       },
       {
-        "nombre": "Queso rallado",
+        "nombre": "Queso rallado sin lactosa",
         "cantidad": 0.15,
         "unidad": "bolsa"
       },
@@ -1680,7 +1695,7 @@
     "ingredientes_base": [
       {
         "nombre": "Pan de Hamburguesa",
-        "cantidad": 2.0,
+        "cantidad": 1.5,
         "unidad": "ud"
       },
       {
@@ -1689,7 +1704,7 @@
         "unidad": "ud"
       },
       {
-        "nombre": "Tomate Natural",
+        "nombre": "Tomate natural",
         "cantidad": 0.2,
         "unidad": "ud"
       },
@@ -1741,7 +1756,7 @@
         "unidad": "ud"
       },
       {
-        "nombre": "Tomate Natural",
+        "nombre": "Tomate natural",
         "cantidad": 0.2,
         "unidad": "ud"
       },
@@ -1784,7 +1799,7 @@
     "ingredientes_lactosa": [
       {
         "nombre": "Pan de Hamburguesa",
-        "cantidad": 2.0,
+        "cantidad": 1.5,
         "unidad": "ud"
       },
       {
@@ -1793,7 +1808,7 @@
         "unidad": "ud"
       },
       {
-        "nombre": "Tomate Natural",
+        "nombre": "Tomate natural",
         "cantidad": 0.2,
         "unidad": "ud"
       },
@@ -1828,7 +1843,7 @@
         "unidad": "ud"
       },
       {
-        "nombre": "Copa de Chocolate",
+        "nombre": "Copa de Chocolate sin lactosa",
         "cantidad": 1.0,
         "unidad": "ud"
       }
@@ -1914,6 +1929,1356 @@
       },
       {
         "nombre": "Bolsas basura pequeñas",
+        "cantidad": 1.0,
+        "unidad": "ud"
+      }
+    ]
+  },
+  {
+    "plato": "Manzana",
+    "tipo_comida": "Merienda",
+    "ingredientes_base": [
+      {
+        "nombre": "Manzana",
+        "cantidad": 1.0,
+        "unidad": "ud"
+      }
+    ],
+    "ingredientes_celiacos": [
+      {
+        "nombre": "Manzana",
+        "cantidad": 1.0,
+        "unidad": "ud"
+      }
+    ],
+    "ingredientes_lactosa": [
+      {
+        "nombre": "Manzana",
+        "cantidad": 1.0,
+        "unidad": "ud"
+      }
+    ]
+  },
+  {
+    "plato": "Mandarinas",
+    "tipo_comida": "Merienda",
+    "ingredientes_base": [
+      {
+        "nombre": "Mandarinas",
+        "cantidad": 2.0,
+        "unidad": "ud"
+      }
+    ],
+    "ingredientes_celiacos": [
+      {
+        "nombre": "Mandarinas",
+        "cantidad": 2.0,
+        "unidad": "ud"
+      }
+    ],
+    "ingredientes_lactosa": [
+      {
+        "nombre": "Mandarinas",
+        "cantidad": 2.0,
+        "unidad": "ud"
+      }
+    ]
+  },
+  {
+    "plato": "Puré Jairoi (caja) + Salchichas Frankfurt + Gelatina",
+    "tipo_comida": "Cena",
+    "ingredientes_base": [
+      {
+        "nombre": "Puré de patata sin gluten",
+        "cantidad": 0.0833,
+        "unidad": "caja"
+      },
+      {
+        "nombre": "Leche sin lactosa",
+        "cantidad": 0.1667,
+        "unidad": "l"
+      },
+      {
+        "nombre": "Salchichas frankfurt",
+        "cantidad": 4.0,
+        "unidad": "ud"
+      },
+      {
+        "nombre": "Gelatina",
+        "cantidad": 1.0,
+        "unidad": "ud"
+      }
+    ],
+    "ingredientes_celiacos": [
+      {
+        "nombre": "Puré de patata sin gluten",
+        "cantidad": 0.0833,
+        "unidad": "caja"
+      },
+      {
+        "nombre": "Leche sin lactosa",
+        "cantidad": 0.1667,
+        "unidad": "l"
+      },
+      {
+        "nombre": "Salchichas frankfurt",
+        "cantidad": 4.0,
+        "unidad": "ud"
+      },
+      {
+        "nombre": "Gelatina",
+        "cantidad": 1.0,
+        "unidad": "ud"
+      }
+    ],
+    "ingredientes_lactosa": [
+      {
+        "nombre": "Puré de patata sin gluten",
+        "cantidad": 0.0833,
+        "unidad": "caja"
+      },
+      {
+        "nombre": "Leche sin lactosa",
+        "cantidad": 0.1667,
+        "unidad": "l"
+      },
+      {
+        "nombre": "Salchichas frankfurt",
+        "cantidad": 4.0,
+        "unidad": "ud"
+      },
+      {
+        "nombre": "Gelatina",
+        "cantidad": 1.0,
+        "unidad": "ud"
+      }
+    ]
+  },
+  {
+    "plato": "Macarrones con Tomate + Carne Picada + Queso + Melocotón en almíbar",
+    "tipo_comida": "Comida",
+    "ingredientes_base": [
+      {
+        "nombre": "Macarrones",
+        "cantidad": 0.1,
+        "unidad": "kg"
+      },
+      {
+        "nombre": "Tomate frito",
+        "cantidad": 0.1,
+        "unidad": "kg"
+      },
+      {
+        "nombre": "Carne picada",
+        "cantidad": 0.05,
+        "unidad": "kg"
+      },
+      {
+        "nombre": "Queso rallado",
+        "cantidad": 0.15,
+        "unidad": "bolsa"
+      },
+      {
+        "nombre": "Melocotón en almíbar",
+        "cantidad": 0.17,
+        "unidad": "bote grande"
+      }
+    ],
+    "ingredientes_celiacos": [
+      {
+        "nombre": "Macarrones sin gluten",
+        "cantidad": 0.1,
+        "unidad": "kg"
+      },
+      {
+        "nombre": "Tomate frito",
+        "cantidad": 0.1,
+        "unidad": "kg"
+      },
+      {
+        "nombre": "Carne picada",
+        "cantidad": 0.05,
+        "unidad": "kg"
+      },
+      {
+        "nombre": "Queso rallado",
+        "cantidad": 0.15,
+        "unidad": "bolsa"
+      },
+      {
+        "nombre": "Melocotón en almíbar",
+        "cantidad": 0.17,
+        "unidad": "bote grande"
+      }
+    ],
+    "ingredientes_lactosa": [
+      {
+        "nombre": "Macarrones",
+        "cantidad": 0.1,
+        "unidad": "kg"
+      },
+      {
+        "nombre": "Tomate frito",
+        "cantidad": 0.1,
+        "unidad": "kg"
+      },
+      {
+        "nombre": "Carne picada",
+        "cantidad": 0.05,
+        "unidad": "kg"
+      },
+      {
+        "nombre": "Queso rallado sin lactosa",
+        "cantidad": 0.15,
+        "unidad": "bolsa"
+      },
+      {
+        "nombre": "Melocotón en almíbar",
+        "cantidad": 0.17,
+        "unidad": "bote grande"
+      }
+    ]
+  },
+  {
+    "plato": "Sopa con fideos + Palitos de pescado + Yogur",
+    "tipo_comida": "Cena",
+    "ingredientes_base": [
+      {
+        "nombre": "Sopa sobre",
+        "cantidad": 0.33,
+        "unidad": "l"
+      },
+      {
+        "nombre": "Fideos",
+        "cantidad": 0.02,
+        "unidad": "kg"
+      },
+      {
+        "nombre": "Palitos de pescado",
+        "cantidad": 4.0,
+        "unidad": "ud"
+      },
+      {
+        "nombre": "Mahonesa",
+        "cantidad": 0.0235,
+        "unidad": "bote"
+      },
+      {
+        "nombre": "Yogur",
+        "cantidad": 1.0,
+        "unidad": "ud"
+      }
+    ],
+    "ingredientes_celiacos": [
+      {
+        "nombre": "Sopa sin alérgenos",
+        "cantidad": 0.33,
+        "unidad": "l"
+      },
+      {
+        "nombre": "Fideos sin gluten",
+        "cantidad": 0.02,
+        "unidad": "kg"
+      },
+      {
+        "nombre": "Pescado similar sin gluten ni lactosa",
+        "cantidad": 4.0,
+        "unidad": "ud"
+      },
+      {
+        "nombre": "Mahonesa",
+        "cantidad": 0.0235,
+        "unidad": "bote"
+      },
+      {
+        "nombre": "Yogur",
+        "cantidad": 1.0,
+        "unidad": "ud"
+      }
+    ],
+    "ingredientes_lactosa": [
+      {
+        "nombre": "Sopa sin alérgenos",
+        "cantidad": 0.33,
+        "unidad": "l"
+      },
+      {
+        "nombre": "Fideos",
+        "cantidad": 0.02,
+        "unidad": "kg"
+      },
+      {
+        "nombre": "Pescado similar sin gluten ni lactosa",
+        "cantidad": 4.0,
+        "unidad": "ud"
+      },
+      {
+        "nombre": "Mahonesa",
+        "cantidad": 0.0235,
+        "unidad": "bote"
+      },
+      {
+        "nombre": "Yogur sin lactosa",
+        "cantidad": 1.0,
+        "unidad": "ud"
+      }
+    ]
+  },
+  {
+    "plato": "Alubias verdes con patata + Cabezada + Yogur",
+    "tipo_comida": "Comida",
+    "ingredientes_base": [
+      {
+        "nombre": "Alubia verde (congelada)",
+        "cantidad": 0.15,
+        "unidad": "kg"
+      },
+      {
+        "nombre": "Patata",
+        "cantidad": 0.07,
+        "unidad": "kg"
+      },
+      {
+        "nombre": "Jamón Serrano",
+        "cantidad": 0.03,
+        "unidad": "kg"
+      },
+      {
+        "nombre": "Ajo",
+        "cantidad": 0.037,
+        "unidad": "cabeza"
+      },
+      {
+        "nombre": "Cabezada",
+        "cantidad": 2.5,
+        "unidad": "filete"
+      },
+      {
+        "nombre": "Yogur",
+        "cantidad": 1.0,
+        "unidad": "ud"
+      }
+    ],
+    "ingredientes_celiacos": [
+      {
+        "nombre": "Alubia verde (congelada)",
+        "cantidad": 0.15,
+        "unidad": "kg"
+      },
+      {
+        "nombre": "Patata",
+        "cantidad": 0.07,
+        "unidad": "kg"
+      },
+      {
+        "nombre": "Jamón Serrano",
+        "cantidad": 0.03,
+        "unidad": "kg"
+      },
+      {
+        "nombre": "Ajo",
+        "cantidad": 0.037,
+        "unidad": "cabeza"
+      },
+      {
+        "nombre": "Cabezada",
+        "cantidad": 2.5,
+        "unidad": "filete"
+      },
+      {
+        "nombre": "Yogur",
+        "cantidad": 1.0,
+        "unidad": "ud"
+      }
+    ],
+    "ingredientes_lactosa": [
+      {
+        "nombre": "Alubia verde (congelada)",
+        "cantidad": 0.15,
+        "unidad": "kg"
+      },
+      {
+        "nombre": "Patata",
+        "cantidad": 0.07,
+        "unidad": "kg"
+      },
+      {
+        "nombre": "Jamón Serrano",
+        "cantidad": 0.03,
+        "unidad": "kg"
+      },
+      {
+        "nombre": "Ajo",
+        "cantidad": 0.037,
+        "unidad": "cabeza"
+      },
+      {
+        "nombre": "Cabezada",
+        "cantidad": 2.5,
+        "unidad": "filete"
+      },
+      {
+        "nombre": "Yogur sin lactosa",
+        "cantidad": 1.0,
+        "unidad": "ud"
+      }
+    ]
+  },
+  {
+    "plato": "Ensalada de Pasta + Mandarinas",
+    "tipo_comida": "Comida",
+    "ingredientes_base": [
+      {
+        "nombre": "Pasta",
+        "cantidad": 0.08,
+        "unidad": "kg"
+      },
+      {
+        "nombre": "Lechuga",
+        "cantidad": 0.1,
+        "unidad": "ud"
+      },
+      {
+        "nombre": "Atún",
+        "cantidad": 0.03,
+        "unidad": "kg"
+      },
+      {
+        "nombre": "Maiz Escurrido sin gluten ni lactosa",
+        "cantidad": 0.01,
+        "unidad": "kg"
+      },
+      {
+        "nombre": "Tomate",
+        "cantidad": 0.4,
+        "unidad": "ud"
+      },
+      {
+        "nombre": "Mandarinas",
+        "cantidad": 2.0,
+        "unidad": "ud"
+      }
+    ],
+    "ingredientes_celiacos": [
+      {
+        "nombre": "Pasta sin gluten",
+        "cantidad": 0.08,
+        "unidad": "kg"
+      },
+      {
+        "nombre": "Lechuga",
+        "cantidad": 0.1,
+        "unidad": "ud"
+      },
+      {
+        "nombre": "Atún",
+        "cantidad": 0.03,
+        "unidad": "kg"
+      },
+      {
+        "nombre": "Maiz Escurrido sin gluten ni lactosa",
+        "cantidad": 0.01,
+        "unidad": "kg"
+      },
+      {
+        "nombre": "Tomate",
+        "cantidad": 0.4,
+        "unidad": "ud"
+      },
+      {
+        "nombre": "Mandarinas",
+        "cantidad": 2.0,
+        "unidad": "ud"
+      }
+    ],
+    "ingredientes_lactosa": [
+      {
+        "nombre": "Pasta",
+        "cantidad": 0.08,
+        "unidad": "kg"
+      },
+      {
+        "nombre": "Lechuga",
+        "cantidad": 0.1,
+        "unidad": "ud"
+      },
+      {
+        "nombre": "Atún",
+        "cantidad": 0.03,
+        "unidad": "kg"
+      },
+      {
+        "nombre": "Maiz Escurrido sin gluten ni lactosa",
+        "cantidad": 0.01,
+        "unidad": "kg"
+      },
+      {
+        "nombre": "Tomate",
+        "cantidad": 0.4,
+        "unidad": "ud"
+      },
+      {
+        "nombre": "Mandarinas",
+        "cantidad": 2.0,
+        "unidad": "ud"
+      }
+    ]
+  },
+  {
+    "plato": "Ibaialde - Leche con Cola Cao, galletas, mermelada y mantequilla",
+    "tipo_comida": "Desayuno",
+    "ingredientes_base": [
+      {
+        "nombre": "Leche",
+        "cantidad": 0.2,
+        "unidad": "l"
+      },
+      {
+        "nombre": "Cola Cao (sin gluten)",
+        "cantidad": 0.03,
+        "unidad": "kg"
+      },
+      {
+        "nombre": "Galletas",
+        "cantidad": 6.0,
+        "unidad": "ud"
+      },
+      {
+        "nombre": "Mermelada",
+        "cantidad": 0.08,
+        "unidad": "bote"
+      },
+      {
+        "nombre": "Mantequilla",
+        "cantidad": 0.05,
+        "unidad": "bote"
+      }
+    ],
+    "ingredientes_celiacos": [
+      {
+        "nombre": "Leche",
+        "cantidad": 0.2,
+        "unidad": "l"
+      },
+      {
+        "nombre": "Cola Cao (sin gluten)",
+        "cantidad": 0.03,
+        "unidad": "kg"
+      },
+      {
+        "nombre": "Galletas sin gluten y sin lactosa",
+        "cantidad": 6.0,
+        "unidad": "ud"
+      },
+      {
+        "nombre": "Mermelada",
+        "cantidad": 0.08,
+        "unidad": "bote"
+      },
+      {
+        "nombre": "Mantequilla",
+        "cantidad": 0.05,
+        "unidad": "bote"
+      }
+    ],
+    "ingredientes_lactosa": [
+      {
+        "nombre": "Leche sin lactosa",
+        "cantidad": 0.2,
+        "unidad": "l"
+      },
+      {
+        "nombre": "Cola Cao (sin gluten)",
+        "cantidad": 0.03,
+        "unidad": "kg"
+      },
+      {
+        "nombre": "Galletas",
+        "cantidad": 6.0,
+        "unidad": "ud"
+      },
+      {
+        "nombre": "Mermelada",
+        "cantidad": 0.08,
+        "unidad": "bote"
+      },
+      {
+        "nombre": "Mantequilla sin lactosa",
+        "cantidad": 0.05,
+        "unidad": "bote"
+      }
+    ]
+  },
+  {
+    "plato": "Ibaialde - Plátano",
+    "tipo_comida": "Merienda",
+    "ingredientes_base": [
+      {
+        "nombre": "Plátano",
+        "cantidad": 1.0,
+        "unidad": "ud"
+      }
+    ],
+    "ingredientes_celiacos": [
+      {
+        "nombre": "Plátano",
+        "cantidad": 1.0,
+        "unidad": "ud"
+      }
+    ],
+    "ingredientes_lactosa": [
+      {
+        "nombre": "Plátano",
+        "cantidad": 1.0,
+        "unidad": "ud"
+      }
+    ]
+  },
+  {
+    "plato": "Ibaialde - Tortilla, fiambre y patatas fritas",
+    "tipo_comida": "Comida",
+    "ingredientes_base": [
+      {
+        "nombre": "Tortilla de patata (Mercadona)",
+        "cantidad": 0.375,
+        "unidad": "ud"
+      },
+      {
+        "nombre": "Fiambre",
+        "cantidad": 0.375,
+        "unidad": "paquete"
+      },
+      {
+        "nombre": "Bolsa de patatas",
+        "cantidad": 0.25,
+        "unidad": "bolsa"
+      }
+    ],
+    "ingredientes_celiacos": [
+      {
+        "nombre": "Tortilla de patata (Mercadona)",
+        "cantidad": 0.375,
+        "unidad": "ud"
+      },
+      {
+        "nombre": "Fiambre",
+        "cantidad": 0.375,
+        "unidad": "paquete"
+      },
+      {
+        "nombre": "Bolsa de patatas",
+        "cantidad": 0.25,
+        "unidad": "bolsa"
+      }
+    ],
+    "ingredientes_lactosa": [
+      {
+        "nombre": "Tortilla de patata (Mercadona)",
+        "cantidad": 0.375,
+        "unidad": "ud"
+      },
+      {
+        "nombre": "Fiambre",
+        "cantidad": 0.375,
+        "unidad": "paquete"
+      },
+      {
+        "nombre": "Bolsa de patatas",
+        "cantidad": 0.25,
+        "unidad": "bolsa"
+      }
+    ]
+  },
+  {
+    "plato": "Ibaialde - Sopa + Salchichas con patatas fritas + Colacao",
+    "tipo_comida": "Cena",
+    "ingredientes_base": [
+      {
+        "nombre": "Sopa sobre",
+        "cantidad": 0.25,
+        "unidad": "sobre"
+      },
+      {
+        "nombre": "Salchichas",
+        "cantidad": 4.0,
+        "unidad": "ud"
+      },
+      {
+        "nombre": "Ketchup",
+        "cantidad": 0.05,
+        "unidad": "bote"
+      },
+      {
+        "nombre": "Bolsa de patatas",
+        "cantidad": 0.1,
+        "unidad": "bolsa"
+      },
+      {
+        "nombre": "Leche",
+        "cantidad": 0.2,
+        "unidad": "l"
+      },
+      {
+        "nombre": "Cola Cao (sin gluten)",
+        "cantidad": 0.03,
+        "unidad": "kg"
+      }
+    ],
+    "ingredientes_celiacos": [
+      {
+        "nombre": "Sopa sin alérgenos",
+        "cantidad": 0.25,
+        "unidad": "sobre"
+      },
+      {
+        "nombre": "Salchichas",
+        "cantidad": 4.0,
+        "unidad": "ud"
+      },
+      {
+        "nombre": "Ketchup",
+        "cantidad": 0.05,
+        "unidad": "bote"
+      },
+      {
+        "nombre": "Bolsa de patatas",
+        "cantidad": 0.1,
+        "unidad": "bolsa"
+      },
+      {
+        "nombre": "Leche",
+        "cantidad": 0.2,
+        "unidad": "l"
+      },
+      {
+        "nombre": "Cola Cao (sin gluten)",
+        "cantidad": 0.03,
+        "unidad": "kg"
+      }
+    ],
+    "ingredientes_lactosa": [
+      {
+        "nombre": "Sopa sin alérgenos",
+        "cantidad": 0.25,
+        "unidad": "sobre"
+      },
+      {
+        "nombre": "Salchichas",
+        "cantidad": 4.0,
+        "unidad": "ud"
+      },
+      {
+        "nombre": "Ketchup",
+        "cantidad": 0.05,
+        "unidad": "bote"
+      },
+      {
+        "nombre": "Bolsa de patatas",
+        "cantidad": 0.1,
+        "unidad": "bolsa"
+      },
+      {
+        "nombre": "Leche sin lactosa",
+        "cantidad": 0.2,
+        "unidad": "l"
+      },
+      {
+        "nombre": "Cola Cao (sin gluten)",
+        "cantidad": 0.03,
+        "unidad": "kg"
+      }
+    ]
+  },
+  {
+    "plato": "Ibaialde - Garbanzos con chorizo + Merluza rebozada + Pera",
+    "tipo_comida": "Comida",
+    "ingredientes_base": [
+      {
+        "nombre": "Garbanzos cocidos",
+        "cantidad": 0.5,
+        "unidad": "bote"
+      },
+      {
+        "nombre": "Chorizo",
+        "cantidad": 0.08,
+        "unidad": "ud"
+      },
+      {
+        "nombre": "Merluza rebozada",
+        "cantidad": 2.0,
+        "unidad": "ud"
+      },
+      {
+        "nombre": "Pera",
+        "cantidad": 1.0,
+        "unidad": "ud"
+      }
+    ],
+    "ingredientes_celiacos": [
+      {
+        "nombre": "Garbanzos cocidos",
+        "cantidad": 0.5,
+        "unidad": "bote"
+      },
+      {
+        "nombre": "Chorizo",
+        "cantidad": 0.08,
+        "unidad": "ud"
+      },
+      {
+        "nombre": "Merluza rebozada sin gluten",
+        "cantidad": 2.0,
+        "unidad": "ud"
+      },
+      {
+        "nombre": "Pera",
+        "cantidad": 1.0,
+        "unidad": "ud"
+      }
+    ],
+    "ingredientes_lactosa": [
+      {
+        "nombre": "Garbanzos cocidos",
+        "cantidad": 0.5,
+        "unidad": "bote"
+      },
+      {
+        "nombre": "Chorizo",
+        "cantidad": 0.08,
+        "unidad": "ud"
+      },
+      {
+        "nombre": "Merluza rebozada",
+        "cantidad": 2.0,
+        "unidad": "ud"
+      },
+      {
+        "nombre": "Pera",
+        "cantidad": 1.0,
+        "unidad": "ud"
+      }
+    ]
+  },
+  {
+    "plato": "Ibaialde - Bocata de chorizo",
+    "tipo_comida": "Merienda",
+    "ingredientes_base": [
+      {
+        "nombre": "Pan",
+        "cantidad": 0.17,
+        "unidad": "barra"
+      },
+      {
+        "nombre": "Chorizo",
+        "cantidad": 4.0,
+        "unidad": "rodaja"
+      }
+    ],
+    "ingredientes_celiacos": [
+      {
+        "nombre": "Pan sin gluten",
+        "cantidad": 2.0,
+        "unidad": "rebanada"
+      },
+      {
+        "nombre": "Chorizo",
+        "cantidad": 4.0,
+        "unidad": "rodaja"
+      }
+    ],
+    "ingredientes_lactosa": [
+      {
+        "nombre": "Pan",
+        "cantidad": 0.17,
+        "unidad": "barra"
+      },
+      {
+        "nombre": "Chorizo",
+        "cantidad": 4.0,
+        "unidad": "rodaja"
+      }
+    ]
+  },
+  {
+    "plato": "Ibaialde - Ensalada (lechuga, tomate, cebolla, atún, aceitunas) + San Jacobo + Gelatina",
+    "tipo_comida": "Cena",
+    "ingredientes_base": [
+      {
+        "nombre": "Lechuga",
+        "cantidad": 0.1,
+        "unidad": "ud"
+      },
+      {
+        "nombre": "Tomate",
+        "cantidad": 0.25,
+        "unidad": "ud"
+      },
+      {
+        "nombre": "Cebolla",
+        "cantidad": 0.07,
+        "unidad": "ud"
+      },
+      {
+        "nombre": "Atún",
+        "cantidad": 0.05,
+        "unidad": "lata"
+      },
+      {
+        "nombre": "Aceitunas",
+        "cantidad": 0.25,
+        "unidad": "bote pequeño"
+      },
+      {
+        "nombre": "San Jacobo",
+        "cantidad": 2.5,
+        "unidad": "ud"
+      },
+      {
+        "nombre": "Gelatina",
+        "cantidad": 1.0,
+        "unidad": "ud"
+      }
+    ],
+    "ingredientes_celiacos": [
+      {
+        "nombre": "Lechuga",
+        "cantidad": 0.1,
+        "unidad": "ud"
+      },
+      {
+        "nombre": "Tomate",
+        "cantidad": 0.25,
+        "unidad": "ud"
+      },
+      {
+        "nombre": "Cebolla",
+        "cantidad": 0.07,
+        "unidad": "ud"
+      },
+      {
+        "nombre": "Atún",
+        "cantidad": 0.05,
+        "unidad": "lata"
+      },
+      {
+        "nombre": "Aceitunas",
+        "cantidad": 0.25,
+        "unidad": "bote pequeño"
+      },
+      {
+        "nombre": "San Jacobo sin gluten",
+        "cantidad": 2.5,
+        "unidad": "ud"
+      },
+      {
+        "nombre": "Gelatina",
+        "cantidad": 1.0,
+        "unidad": "ud"
+      }
+    ],
+    "ingredientes_lactosa": [
+      {
+        "nombre": "Lechuga",
+        "cantidad": 0.1,
+        "unidad": "ud"
+      },
+      {
+        "nombre": "Tomate",
+        "cantidad": 0.25,
+        "unidad": "ud"
+      },
+      {
+        "nombre": "Cebolla",
+        "cantidad": 0.07,
+        "unidad": "ud"
+      },
+      {
+        "nombre": "Atún",
+        "cantidad": 0.05,
+        "unidad": "lata"
+      },
+      {
+        "nombre": "Aceitunas",
+        "cantidad": 0.25,
+        "unidad": "bote pequeño"
+      },
+      {
+        "nombre": "San Jacobo sin lactosa",
+        "cantidad": 2.5,
+        "unidad": "ud"
+      },
+      {
+        "nombre": "Gelatina",
+        "cantidad": 1.0,
+        "unidad": "ud"
+      }
+    ]
+  },
+  {
+    "plato": "Ibaialde - Alubia verde con patata + Lomo con pimientos + Yogur",
+    "tipo_comida": "Comida",
+    "ingredientes_base": [
+      {
+        "nombre": "Alubia verde (bote)",
+        "cantidad": 0.4,
+        "unidad": "bote"
+      },
+      {
+        "nombre": "Patata",
+        "cantidad": 0.09,
+        "unidad": "kg"
+      },
+      {
+        "nombre": "Lomo",
+        "cantidad": 2.0,
+        "unidad": "filete"
+      },
+      {
+        "nombre": "Pimientos (bote)",
+        "cantidad": 0.17,
+        "unidad": "bote"
+      },
+      {
+        "nombre": "Yogur",
+        "cantidad": 1.0,
+        "unidad": "ud"
+      }
+    ],
+    "ingredientes_celiacos": [
+      {
+        "nombre": "Alubia verde (bote)",
+        "cantidad": 0.4,
+        "unidad": "bote"
+      },
+      {
+        "nombre": "Patata",
+        "cantidad": 0.09,
+        "unidad": "kg"
+      },
+      {
+        "nombre": "Lomo",
+        "cantidad": 2.0,
+        "unidad": "filete"
+      },
+      {
+        "nombre": "Pimientos (bote)",
+        "cantidad": 0.17,
+        "unidad": "bote"
+      },
+      {
+        "nombre": "Yogur",
+        "cantidad": 1.0,
+        "unidad": "ud"
+      }
+    ],
+    "ingredientes_lactosa": [
+      {
+        "nombre": "Alubia verde (bote)",
+        "cantidad": 0.4,
+        "unidad": "bote"
+      },
+      {
+        "nombre": "Patata",
+        "cantidad": 0.09,
+        "unidad": "kg"
+      },
+      {
+        "nombre": "Lomo",
+        "cantidad": 2.0,
+        "unidad": "filete"
+      },
+      {
+        "nombre": "Pimientos (bote)",
+        "cantidad": 0.17,
+        "unidad": "bote"
+      },
+      {
+        "nombre": "Yogur sin lactosa",
+        "cantidad": 1.0,
+        "unidad": "ud"
+      }
+    ]
+  },
+  {
+    "plato": "Ibaialde - Bocata de Nocilla",
+    "tipo_comida": "Merienda",
+    "ingredientes_base": [
+      {
+        "nombre": "Pan",
+        "cantidad": 0.17,
+        "unidad": "barra"
+      },
+      {
+        "nombre": "Nocilla (sin frutos secos ni gluten)",
+        "cantidad": 0.1,
+        "unidad": "bote"
+      }
+    ],
+    "ingredientes_celiacos": [
+      {
+        "nombre": "Pan sin gluten",
+        "cantidad": 2.0,
+        "unidad": "rebanada"
+      },
+      {
+        "nombre": "Nocilla (sin frutos secos ni gluten)",
+        "cantidad": 0.1,
+        "unidad": "bote"
+      }
+    ],
+    "ingredientes_lactosa": [
+      {
+        "nombre": "Pan",
+        "cantidad": 0.17,
+        "unidad": "barra"
+      },
+      {
+        "nombre": "Nocilla (sin frutos secos ni gluten)",
+        "cantidad": 0.1,
+        "unidad": "bote"
+      }
+    ]
+  },
+  {
+    "plato": "Ibaialde - Hamburguesa con patatas fritas + Flan",
+    "tipo_comida": "Cena",
+    "ingredientes_base": [
+      {
+        "nombre": "Hamburguesas",
+        "cantidad": 1.4,
+        "unidad": "ud"
+      },
+      {
+        "nombre": "Pan de Hamburguesa",
+        "cantidad": 1.4,
+        "unidad": "ud"
+      },
+      {
+        "nombre": "Queso",
+        "cantidad": 1.5,
+        "unidad": "loncha"
+      },
+      {
+        "nombre": "Lechuga",
+        "cantidad": 0.02,
+        "unidad": "ud"
+      },
+      {
+        "nombre": "Tomate natural",
+        "cantidad": 0.15,
+        "unidad": "ud"
+      },
+      {
+        "nombre": "Cebolla",
+        "cantidad": 0.1,
+        "unidad": "ud"
+      },
+      {
+        "nombre": "Bolsa de patatas",
+        "cantidad": 0.15,
+        "unidad": "bolsa"
+      },
+      {
+        "nombre": "Ketchup",
+        "cantidad": 0.0625,
+        "unidad": "bote"
+      },
+      {
+        "nombre": "Flan",
+        "cantidad": 1.0,
+        "unidad": "ud"
+      }
+    ],
+    "ingredientes_celiacos": [
+      {
+        "nombre": "Hamburguesas",
+        "cantidad": 1.4,
+        "unidad": "ud"
+      },
+      {
+        "nombre": "Pan hamburguesa sin gluten",
+        "cantidad": 1.4,
+        "unidad": "ud"
+      },
+      {
+        "nombre": "Queso",
+        "cantidad": 1.5,
+        "unidad": "loncha"
+      },
+      {
+        "nombre": "Lechuga",
+        "cantidad": 0.02,
+        "unidad": "ud"
+      },
+      {
+        "nombre": "Tomate natural",
+        "cantidad": 0.15,
+        "unidad": "ud"
+      },
+      {
+        "nombre": "Cebolla",
+        "cantidad": 0.1,
+        "unidad": "ud"
+      },
+      {
+        "nombre": "Bolsa de patatas",
+        "cantidad": 0.15,
+        "unidad": "bolsa"
+      },
+      {
+        "nombre": "Ketchup",
+        "cantidad": 0.0625,
+        "unidad": "bote"
+      },
+      {
+        "nombre": "Flan",
+        "cantidad": 1.0,
+        "unidad": "ud"
+      }
+    ],
+    "ingredientes_lactosa": [
+      {
+        "nombre": "Hamburguesas",
+        "cantidad": 1.4,
+        "unidad": "ud"
+      },
+      {
+        "nombre": "Pan de Hamburguesa",
+        "cantidad": 1.4,
+        "unidad": "ud"
+      },
+      {
+        "nombre": "Queso sin lactosa",
+        "cantidad": 1.5,
+        "unidad": "loncha"
+      },
+      {
+        "nombre": "Lechuga",
+        "cantidad": 0.02,
+        "unidad": "ud"
+      },
+      {
+        "nombre": "Tomate natural",
+        "cantidad": 0.15,
+        "unidad": "ud"
+      },
+      {
+        "nombre": "Cebolla",
+        "cantidad": 0.1,
+        "unidad": "ud"
+      },
+      {
+        "nombre": "Bolsa de patatas",
+        "cantidad": 0.15,
+        "unidad": "bolsa"
+      },
+      {
+        "nombre": "Ketchup",
+        "cantidad": 0.0625,
+        "unidad": "bote"
+      },
+      {
+        "nombre": "Flan sin lactosa",
+        "cantidad": 1.0,
+        "unidad": "ud"
+      }
+    ]
+  },
+  {
+    "plato": "Ibaialde - Macarrones con carne y chistorra + Natilla",
+    "tipo_comida": "Comida",
+    "ingredientes_base": [
+      {
+        "nombre": "Macarrones",
+        "cantidad": 0.1,
+        "unidad": "kg"
+      },
+      {
+        "nombre": "Carne picada",
+        "cantidad": 0.04,
+        "unidad": "kg"
+      },
+      {
+        "nombre": "Chistorra",
+        "cantidad": 0.05,
+        "unidad": "ud"
+      },
+      {
+        "nombre": "Queso rallado",
+        "cantidad": 0.08,
+        "unidad": "bolsa"
+      },
+      {
+        "nombre": "Tomate frito",
+        "cantidad": 0.05,
+        "unidad": "kg"
+      },
+      {
+        "nombre": "Natilla",
+        "cantidad": 1.0,
+        "unidad": "ud"
+      }
+    ],
+    "ingredientes_celiacos": [
+      {
+        "nombre": "Macarrones sin gluten",
+        "cantidad": 0.1,
+        "unidad": "kg"
+      },
+      {
+        "nombre": "Carne picada",
+        "cantidad": 0.04,
+        "unidad": "kg"
+      },
+      {
+        "nombre": "Chistorra",
+        "cantidad": 0.05,
+        "unidad": "ud"
+      },
+      {
+        "nombre": "Queso rallado",
+        "cantidad": 0.08,
+        "unidad": "bolsa"
+      },
+      {
+        "nombre": "Tomate frito",
+        "cantidad": 0.05,
+        "unidad": "kg"
+      },
+      {
+        "nombre": "Natilla",
+        "cantidad": 1.0,
+        "unidad": "ud"
+      }
+    ],
+    "ingredientes_lactosa": [
+      {
+        "nombre": "Macarrones",
+        "cantidad": 0.1,
+        "unidad": "kg"
+      },
+      {
+        "nombre": "Carne picada",
+        "cantidad": 0.04,
+        "unidad": "kg"
+      },
+      {
+        "nombre": "Chistorra",
+        "cantidad": 0.05,
+        "unidad": "ud"
+      },
+      {
+        "nombre": "Queso rallado sin lactosa",
+        "cantidad": 0.08,
+        "unidad": "bolsa"
+      },
+      {
+        "nombre": "Tomate frito",
+        "cantidad": 0.05,
+        "unidad": "kg"
+      },
+      {
+        "nombre": "Natilla sin lactosa",
         "cantidad": 1.0,
         "unidad": "ud"
       }
