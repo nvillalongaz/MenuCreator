@@ -31,6 +31,9 @@ st.markdown(
 /* Área principal */
 .block-container { padding-top: 2.5rem; padding-bottom: 3rem; max-width: 1400px; }
 
+/* Días: dos por fila, uno por fila si la zona principal es estrecha */
+[class*="st-key-par_"] > [data-testid="stLayoutWrapper"]:first-child > [data-testid="stHorizontalBlock"] { flex-wrap: wrap !important; row-gap: 1rem; }
+[class*="st-key-par_"] > [data-testid="stLayoutWrapper"]:first-child > [data-testid="stHorizontalBlock"] > [data-testid="stColumn"] { flex: 1 1 430px !important; min-width: 0 !important; width: auto !important; }
 /* Tarjetas de cada día y de la lista de compra */
 [class*="st-key-dia_"], .st-key-compra {
     background: #FFFFFF;
@@ -45,6 +48,32 @@ st.markdown(
 /* Filas de comida: una línea con nombre, plato y ajuste, separadas por una raya fina */
 [class*="st-key-fila_"] { border-top: 1px solid #EEF0ED; padding-top: 8px; gap: 0.4rem; }
 .comida { font-size: .85rem; font-weight: 700; color: #4C6B57; }
+/* Filas de comida: anchos fijos para nombre, −, casilla y +; el desplegable ocupa el resto */
+[class*="st-key-fila_"] > [data-testid="stLayoutWrapper"]:first-child > [data-testid="stHorizontalBlock"],
+[class*="st-key-enc_"] > [data-testid="stLayoutWrapper"]:first-child > [data-testid="stHorizontalBlock"] { flex-wrap: nowrap !important; gap: .5rem; }
+[class*="st-key-fila_"] > [data-testid="stLayoutWrapper"]:first-child > [data-testid="stHorizontalBlock"] > [data-testid="stColumn"],
+[class*="st-key-enc_"] > [data-testid="stLayoutWrapper"]:first-child > [data-testid="stHorizontalBlock"] > [data-testid="stColumn"] { min-width: 0 !important; width: auto !important; }
+[class*="st-key-fila_"] > [data-testid="stLayoutWrapper"]:first-child > [data-testid="stHorizontalBlock"] > [data-testid="stColumn"]:nth-child(1),
+[class*="st-key-enc_"] > [data-testid="stLayoutWrapper"]:first-child > [data-testid="stHorizontalBlock"] > [data-testid="stColumn"]:nth-child(1) { flex: 0 0 84px !important; }
+[class*="st-key-fila_"] > [data-testid="stLayoutWrapper"]:first-child > [data-testid="stHorizontalBlock"] > [data-testid="stColumn"]:nth-child(2),
+[class*="st-key-enc_"] > [data-testid="stLayoutWrapper"]:first-child > [data-testid="stHorizontalBlock"] > [data-testid="stColumn"]:nth-child(2) { flex: 1 1 auto !important; }
+[class*="st-key-fila_"] > [data-testid="stLayoutWrapper"]:first-child > [data-testid="stHorizontalBlock"] > [data-testid="stColumn"]:nth-child(3),
+[class*="st-key-enc_"] > [data-testid="stLayoutWrapper"]:first-child > [data-testid="stHorizontalBlock"] > [data-testid="stColumn"]:nth-child(3) { flex: 0 0 40px !important; }
+[class*="st-key-fila_"] > [data-testid="stLayoutWrapper"]:first-child > [data-testid="stHorizontalBlock"] > [data-testid="stColumn"]:nth-child(4),
+[class*="st-key-enc_"] > [data-testid="stLayoutWrapper"]:first-child > [data-testid="stHorizontalBlock"] > [data-testid="stColumn"]:nth-child(4) { flex: 0 0 52px !important; }
+[class*="st-key-fila_"] > [data-testid="stLayoutWrapper"]:first-child > [data-testid="stHorizontalBlock"] > [data-testid="stColumn"]:nth-child(5),
+[class*="st-key-enc_"] > [data-testid="stLayoutWrapper"]:first-child > [data-testid="stHorizontalBlock"] > [data-testid="stColumn"]:nth-child(5) { flex: 0 0 40px !important; }
+[class*="st-key-enc_"] { margin-bottom: -0.6rem; }
+/* Botones − / + del ajuste */
+[class*="st-key-menos_"] button, [class*="st-key-mas_"] button {
+    min-height: 40px; height: 40px; padding: 0; border-radius: 8px;
+    border: 1px solid #C9D6C8; background: #FFFFFF; color: #4C6B57;
+}
+[class*="st-key-menos_"] button p, [class*="st-key-mas_"] button p { font-size: 1.15rem; font-weight: 800; line-height: 1; }
+[class*="st-key-menos_"] button:hover, [class*="st-key-mas_"] button:hover { border-color: #4C6B57; background: #EEF3EF; color: #2F4637; }
+[class*="st-key-ajuste_"] input { text-align: center; padding-left: 4px; padding-right: 4px; }
+.enc { font-size: .7rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: #5E6B63; }
+.enc-ajuste { display: block; white-space: nowrap; letter-spacing: .02em; text-align: center; cursor: help; border-bottom: 1px dotted #8FA096; width: fit-content; margin: 0 auto; }
 
 /* Números sin los botones +/- para que quepan en la fila */
 [data-testid="stNumberInputStepUp"], [data-testid="stNumberInputStepDown"] { display: none; }
@@ -73,13 +102,18 @@ st.markdown(
 /* Móvil: las filas de comida y la cabecera del día no se apilan, y aparece un botón de generar abajo */
 .st-key-generar_movil, .st-key-descargas_movil { display: none; }
 @media (max-width: 640px) {
-  [class*="st-key-fila_"] > [data-testid="stLayoutWrapper"]:first-child > [data-testid="stHorizontalBlock"],
-  [class*="st-key-cab_"] > [data-testid="stLayoutWrapper"]:first-child > [data-testid="stHorizontalBlock"] { flex-wrap: nowrap !important; gap: .5rem; }
-  [class*="st-key-fila_"] > [data-testid="stLayoutWrapper"]:first-child > [data-testid="stHorizontalBlock"] > [data-testid="stColumn"],
+  [class*="st-key-cab_"] > [data-testid="stLayoutWrapper"]:first-child > [data-testid="stHorizontalBlock"] { flex-wrap: nowrap !important; gap: .35rem; }
   [class*="st-key-cab_"] > [data-testid="stLayoutWrapper"]:first-child > [data-testid="stHorizontalBlock"] > [data-testid="stColumn"] { min-width: 0 !important; width: auto !important; }
-  [class*="st-key-fila_"] > [data-testid="stLayoutWrapper"]:first-child > [data-testid="stHorizontalBlock"] > [data-testid="stColumn"]:nth-child(1) { flex: 0 0 74px !important; }
-  [class*="st-key-fila_"] > [data-testid="stLayoutWrapper"]:first-child > [data-testid="stHorizontalBlock"] > [data-testid="stColumn"]:nth-child(2) { flex: 1 1 auto !important; }
-  [class*="st-key-fila_"] > [data-testid="stLayoutWrapper"]:first-child > [data-testid="stHorizontalBlock"] > [data-testid="stColumn"]:nth-child(3) { flex: 0 0 52px !important; }
+  [class*="st-key-fila_"] > [data-testid="stLayoutWrapper"]:first-child > [data-testid="stHorizontalBlock"],
+  [class*="st-key-enc_"] > [data-testid="stLayoutWrapper"]:first-child > [data-testid="stHorizontalBlock"] { gap: .35rem; }
+  [class*="st-key-fila_"] > [data-testid="stLayoutWrapper"]:first-child > [data-testid="stHorizontalBlock"] > [data-testid="stColumn"]:nth-child(1),
+  [class*="st-key-enc_"] > [data-testid="stLayoutWrapper"]:first-child > [data-testid="stHorizontalBlock"] > [data-testid="stColumn"]:nth-child(1) { flex: 0 0 66px !important; }
+  [class*="st-key-fila_"] > [data-testid="stLayoutWrapper"]:first-child > [data-testid="stHorizontalBlock"] > [data-testid="stColumn"]:nth-child(3),
+  [class*="st-key-enc_"] > [data-testid="stLayoutWrapper"]:first-child > [data-testid="stHorizontalBlock"] > [data-testid="stColumn"]:nth-child(3),
+  [class*="st-key-fila_"] > [data-testid="stLayoutWrapper"]:first-child > [data-testid="stHorizontalBlock"] > [data-testid="stColumn"]:nth-child(5),
+  [class*="st-key-enc_"] > [data-testid="stLayoutWrapper"]:first-child > [data-testid="stHorizontalBlock"] > [data-testid="stColumn"]:nth-child(5) { flex: 0 0 36px !important; }
+  [class*="st-key-fila_"] > [data-testid="stLayoutWrapper"]:first-child > [data-testid="stHorizontalBlock"] > [data-testid="stColumn"]:nth-child(4),
+  [class*="st-key-enc_"] > [data-testid="stLayoutWrapper"]:first-child > [data-testid="stHorizontalBlock"] > [data-testid="stColumn"]:nth-child(4) { flex: 0 0 44px !important; }
   [class*="st-key-cab_"] > [data-testid="stLayoutWrapper"]:first-child > [data-testid="stHorizontalBlock"] > [data-testid="stColumn"] { flex: 1 1 0 !important; }
   .comida { font-size: .78rem; }
   [class*="st-key-dia_"], .st-key-compra { padding: 16px !important; }
@@ -128,7 +162,8 @@ with st.sidebar:
     st.markdown(
         f"""{TIENDA}
 <p class="lateral-titulo">Planificador de menús</p>
-<p class="lateral-texto">Campamento de 4 días. Elige los platos y genera la compra y el manual del cocinero.</p>""",
+<p class="lateral-texto">Campamento de 4 días. Elige los platos y genera la compra y el manual del cocinero.</p>
+<p class="lateral-texto">Con <b>−</b> y <b>+</b> (o escribiendo en la casilla <b>± pers.</b>) sumas o restas personas solo en esa comida.</p>""",
         unsafe_allow_html=True,
     )
     resumen_slot = st.empty()
@@ -137,6 +172,11 @@ with st.sidebar:
 # ---------------------------------------------------------------------------
 # Días (dos por fila)
 # ---------------------------------------------------------------------------
+def sumar(clave: str, delta: int):
+    """Botones − / + del ajuste de personas de una comida."""
+    st.session_state[clave] = int(st.session_state.get(clave, 0)) + delta
+
+
 def tarjeta_dia(i: int) -> dict:
     with st.container(key=f"dia_{i}"):
         cab = st.container(key=f"cab_{i}")
@@ -158,9 +198,21 @@ def tarjeta_dia(i: int) -> dict:
             "comidas": {},
         }
 
+        # Encabezado de las columnas de comidas
+        with st.container(key=f"enc_{i}"):
+            k0, k1, _, k2, _ = st.columns([1.15, 3.3, 0.5, 0.75, 0.5], gap="small", vertical_alignment="bottom")
+            with k1:
+                st.markdown('<span class="enc">Plato</span>', unsafe_allow_html=True)
+            with k2:
+                st.markdown(
+                    '<span class="enc enc-ajuste" title="Suma (+) o resta (−) personas solo en esta comida. '
+                    'Ej.: 5 si vienen 5 monitores más a cenar, −10 si 10 no comen en el campamento.">± pers.</span>',
+                    unsafe_allow_html=True,
+                )
+
         for tipo in TIPOS_COMIDA:
             with st.container(key=f"fila_{i}_{tipo}"):
-                c0, c1, c2 = st.columns([1.15, 4, 1], vertical_alignment="center")
+                c0, c1, c_menos, c2, c_mas = st.columns([1.15, 3.3, 0.5, 0.75, 0.5], gap="small", vertical_alignment="center")
                 with c0:
                     st.markdown(f'<span class="comida">{tipo}</span>', unsafe_allow_html=True)
                 with c1:
@@ -185,12 +237,20 @@ def tarjeta_dia(i: int) -> dict:
                             "ajuste": 0,
                         }
                 else:
+                    clave = f"ajuste_{i}_{tipo}"
+                    if clave not in st.session_state:
+                        st.session_state[clave] = 0
+                    with c_menos:
+                        st.button("−", key=f"menos_{i}_{tipo}", on_click=sumar, args=(clave, -1),
+                                  width="stretch", help=f"Una persona menos en {tipo.lower()}")
                     with c2:
                         ajuste = st.number_input(
-                            f"Ajuste {tipo}", value=0, key=f"ajuste_{i}_{tipo}",
+                            f"± personas en {tipo}", key=clave, step=1,
                             label_visibility="collapsed",
-                            help="Personas adicionales (+) o ausentes (-) en esta comida",
                         )
+                    with c_mas:
+                        st.button("+", key=f"mas_{i}_{tipo}", on_click=sumar, args=(clave, 1),
+                                  width="stretch", help=f"Una persona más en {tipo.lower()}")
                     if seleccion != NINGUNO:
                         dia_plan["comidas"][tipo] = {"plato": seleccion, "ajuste": ajuste}
     return dia_plan
@@ -198,7 +258,8 @@ def tarjeta_dia(i: int) -> dict:
 
 plan = []
 for fila in range(2):
-    cols = st.columns(2, gap="medium")
+    # Dos días por fila; si no caben (pantallas medianas) pasan a uno por fila
+    cols = st.container(key=f"par_{fila}").columns(2, gap="medium")
     for j, col in enumerate(cols):
         with col:
             plan.append(tarjeta_dia(fila * 2 + j))
