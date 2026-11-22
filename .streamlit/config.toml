@@ -1,0 +1,27 @@
+# Tema "Salvia" para el Planificador de Menús de Campamento
+[theme]
+base = "light"
+primaryColor = "#4C6B57"
+backgroundColor = "#F3F4F1"
+secondaryBackgroundColor = "#F7F8F6"
+textColor = "#1E2421"
+borderColor = "#D9DED9"
+linkColor = "#4C6B57"
+font = "Manrope:https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+headingFontWeights = [800, 800, 700, 700, 700, 700]
+baseRadius = "8px"
+buttonRadius = "10px"
+dataframeBorderColor = "#EEF0ED"
+dataframeHeaderBackgroundColor = "#F3F4F1"
+dataframeHeaderTextColor = "#5E6B63"
+
+# Barra lateral oscura con acento salvia
+[theme.sidebar]
+backgroundColor = "#1E2421"
+secondaryBackgroundColor = "#2A322D"
+textColor = "#EEF1EE"
+primaryColor = "#8FB09A"
+borderColor = "#343C37"
+linkColor = "#8FB09A"
+font = "Manrope:https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+headingFontWeights = [700, 700, 700, 700, 700, 700]
