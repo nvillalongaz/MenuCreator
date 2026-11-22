@@ -75,6 +75,15 @@ st.markdown(
 .enc { font-size: .7rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: #5E6B63; }
 .enc-ajuste { display: block; white-space: nowrap; letter-spacing: .02em; text-align: center; cursor: help; border-bottom: 1px dotted #8FA096; width: fit-content; margin: 0 auto; }
 
+/* Apartado de excursión dentro de cada día */
+[class*="st-key-excursion_"] {
+    background: #F3F6F2; border: 1px solid #DCE5DA; border-radius: 10px;
+    padding: 14px 16px !important; margin-top: 10px; gap: .5rem;
+}
+.exc-cab { display: flex; flex-direction: column; gap: 2px; margin-bottom: 14px; }
+.exc-titulo { font-size: .95rem; font-weight: 800; color: #2F4637; line-height: 1.3; }
+.exc-nota { font-size: .78rem; color: #5E6B63; line-height: 1.4; }
+[class*="st-key-excursion_"] [data-testid="stWidgetLabel"] p { font-size: .75rem; font-weight: 600; color: #5E6B63; }
 /* Números sin los botones +/- para que quepan en la fila */
 [data-testid="stNumberInputStepUp"], [data-testid="stNumberInputStepDown"] { display: none; }
 [data-testid="stNumberInput"] input { font-weight: 700; }
@@ -102,7 +111,9 @@ st.markdown(
 /* Móvil: las filas de comida y la cabecera del día no se apilan, y aparece un botón de generar abajo */
 .st-key-generar_movil, .st-key-descargas_movil { display: none; }
 @media (max-width: 640px) {
-  [class*="st-key-cab_"] > [data-testid="stLayoutWrapper"]:first-child > [data-testid="stHorizontalBlock"] { flex-wrap: nowrap !important; gap: .35rem; }
+  [class*="st-key-cab_"] > [data-testid="stLayoutWrapper"]:first-child > [data-testid="stHorizontalBlock"],
+  [class*="st-key-exccnt_"] > [data-testid="stLayoutWrapper"]:first-child > [data-testid="stHorizontalBlock"] { flex-wrap: nowrap !important; gap: .35rem; }
+  [class*="st-key-exccnt_"] > [data-testid="stLayoutWrapper"]:first-child > [data-testid="stHorizontalBlock"] > [data-testid="stColumn"] { min-width: 0 !important; width: auto !important; flex: 1 1 0 !important; }
   [class*="st-key-cab_"] > [data-testid="stLayoutWrapper"]:first-child > [data-testid="stHorizontalBlock"] > [data-testid="stColumn"] { min-width: 0 !important; width: auto !important; }
   [class*="st-key-fila_"] > [data-testid="stLayoutWrapper"]:first-child > [data-testid="stHorizontalBlock"],
   [class*="st-key-enc_"] > [data-testid="stLayoutWrapper"]:first-child > [data-testid="stHorizontalBlock"] { gap: .35rem; }
@@ -152,6 +163,7 @@ for plato in maestro:
 # El almuerzo usa las mismas opciones que la merienda
 opciones_comida["Almuerzo"] = list(opciones_comida["Merienda"])
 TIPOS_COMIDA = ["Desayuno", "Almuerzo", "Comida", "Merienda", "Cena", "Excursión"]
+COMIDAS_FILA = [t for t in TIPOS_COMIDA if t != "Excursión"]  # la excursión va en su propio apartado
 DIAS = ["Día 1", "Día 2", "Día 3", "Día 4"]
 
 
@@ -210,7 +222,7 @@ def tarjeta_dia(i: int) -> dict:
                     unsafe_allow_html=True,
                 )
 
-        for tipo in TIPOS_COMIDA:
+        for tipo in COMIDAS_FILA:
             with st.container(key=f"fila_{i}_{tipo}"):
                 c0, c1, c_menos, c2, c_mas = st.columns([1.15, 3.3, 0.5, 0.75, 0.5], gap="small", vertical_alignment="center")
                 with c0:
@@ -220,39 +232,49 @@ def tarjeta_dia(i: int) -> dict:
                         f"Plato de {tipo}", options=opciones_comida[tipo],
                         key=f"sel_{i}_{tipo}", label_visibility="collapsed",
                     )
-                if tipo == "Excursión":
-                    if seleccion != NINGUNO:
-                        e1, e2, e3 = st.columns(3)
-                        with e1:
-                            exc_pax = st.number_input("Pers. excursión", min_value=0, value=0, key=f"exc_pax_{i}")
-                        with e2:
-                            exc_cel = st.number_input("Celíacos", min_value=0, value=0, key=f"exc_cel_{i}")
-                        with e3:
-                            exc_lac = st.number_input("Sin lactosa", min_value=0, value=0, key=f"exc_lac_{i}")
-                        dia_plan["comidas"][tipo] = {
-                            "plato": seleccion,
-                            "personas": exc_pax,
-                            "celiacos": exc_cel,
-                            "lactosos": exc_lac,
-                            "ajuste": 0,
-                        }
-                else:
-                    clave = f"ajuste_{i}_{tipo}"
-                    if clave not in st.session_state:
-                        st.session_state[clave] = 0
-                    with c_menos:
-                        st.button("−", key=f"menos_{i}_{tipo}", on_click=sumar, args=(clave, -1),
-                                  width="stretch", help=f"Una persona menos en {tipo.lower()}")
-                    with c2:
-                        ajuste = st.number_input(
-                            f"± personas en {tipo}", key=clave, step=1,
-                            label_visibility="collapsed",
-                        )
-                    with c_mas:
-                        st.button("+", key=f"mas_{i}_{tipo}", on_click=sumar, args=(clave, 1),
-                                  width="stretch", help=f"Una persona más en {tipo.lower()}")
-                    if seleccion != NINGUNO:
-                        dia_plan["comidas"][tipo] = {"plato": seleccion, "ajuste": ajuste}
+                clave = f"ajuste_{i}_{tipo}"
+                if clave not in st.session_state:
+                    st.session_state[clave] = 0
+                with c_menos:
+                    st.button("−", key=f"menos_{i}_{tipo}", on_click=sumar, args=(clave, -1),
+                              width="stretch", help=f"Una persona menos en {tipo.lower()}")
+                with c2:
+                    ajuste = st.number_input(
+                        f"± personas en {tipo}", key=clave, step=1,
+                        label_visibility="collapsed",
+                    )
+                with c_mas:
+                    st.button("+", key=f"mas_{i}_{tipo}", on_click=sumar, args=(clave, 1),
+                              width="stretch", help=f"Una persona más en {tipo.lower()}")
+                if seleccion != NINGUNO:
+                    dia_plan["comidas"][tipo] = {"plato": seleccion, "ajuste": ajuste}
+
+        # Excursión: apartado propio con sus personas, celíacos y sin lactosa
+        with st.container(key=f"excursion_{i}"):
+            st.markdown(
+                '<div class="exc-cab"><span class="exc-titulo">Excursión</span>'
+                '<span class="exc-nota">Comida fuera del campamento, con sus propias personas.</span></div>',
+                unsafe_allow_html=True,
+            )
+            exc_plato = st.selectbox(
+                "Plato de la excursión", options=opciones_comida["Excursión"],
+                key=f"sel_{i}_Excursión", label_visibility="collapsed",
+            )
+            e1, e2, e3 = st.container(key=f"exccnt_{i}").columns(3)
+            with e1:
+                exc_pax = st.number_input("Personas", min_value=0, value=0, key=f"exc_pax_{i}")
+            with e2:
+                exc_cel = st.number_input("Celíacos", min_value=0, value=0, key=f"exc_cel_{i}")
+            with e3:
+                exc_lac = st.number_input("Sin lact.", min_value=0, value=0, key=f"exc_lac_{i}")
+            if exc_plato != NINGUNO:
+                dia_plan["comidas"]["Excursión"] = {
+                    "plato": exc_plato,
+                    "personas": exc_pax,
+                    "celiacos": exc_cel,
+                    "lactosos": exc_lac,
+                    "ajuste": 0,
+                }
     return dia_plan
 
 
