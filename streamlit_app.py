@@ -2,6 +2,7 @@ import streamlit as st
 import json
 import pandas as pd
 from tools.calculate_shopping import main as aggregate_ingredients
+from tools.manual_cocinero import generar_manual
 from io import BytesIO
 
 st.set_page_config(page_title="Menú Campamento", page_icon="🏕️", layout="wide")
@@ -29,6 +30,10 @@ if maestro:
         tipo = plato.get("tipo_comida")
         if tipo in opciones_comida:
             opciones_comida[tipo].append(plato["plato"])
+
+# El almuerzo usa las mismas opciones que la merienda
+opciones_comida["Almuerzo"] = list(opciones_comida["Merienda"])
+TIPOS_COMIDA = ["Desayuno", "Almuerzo", "Comida", "Merienda", "Cena", "Excursión"]
 
 st.write("Configura los menús indicando el número de personas base, dietas especiales y los ajustes excepcionales por cada comida.")
 
@@ -58,7 +63,7 @@ for i, col in enumerate(cols):
             }
             
             st.markdown("<hr style='margin: 0.5rem 0'>", unsafe_allow_html=True)
-            for tipo in ["Desayuno", "Comida", "Merienda", "Cena", "Excursión"]:
+            for tipo in TIPOS_COMIDA:
                 with st.expander(f"🍽️ {tipo}", expanded=(tipo=="Comida")):
                     seleccion = st.selectbox("Plato", options=opciones_comida[tipo], key=f"sel_{i}_{tipo}", label_visibility="collapsed")
                     if tipo == "Excursión":
@@ -122,7 +127,7 @@ if generar:
             
             st.dataframe(df, use_container_width=True, hide_index=True)
             
-            export_cols = st.columns([1, 1, 4])
+            export_cols = st.columns([1, 1, 1.4, 2.6])
             csv = df.to_csv(index=False).encode('utf-8')
             with export_cols[0]:
                 st.download_button(label="📥 Exportar a CSV", data=csv, file_name='lista_compra_campamento.csv', mime='text/csv', use_container_width=True)
@@ -137,13 +142,20 @@ if generar:
             except Exception as e:
                 st.warning("Exportación a Excel no disponible (falta xlsxwriter). Usa CSV.")
 
-            st.markdown("<br>", unsafe_allow_html=True)
-            with st.expander("Ver desglose detallado por día e ingrediente"):
-                for dia, detalles in desglose.items():
-                    if detalles:
-                        st.write(f"### {dia}")
-                        df_desglose = pd.DataFrame(detalles)
-                        st.dataframe(df_desglose, use_container_width=True, hide_index=True)
+            # Manual del cocinero (sustituye al desglose por días en pantalla)
+            try:
+                manual = generar_manual(plan, desglose)
+                with export_cols[2]:
+                    st.download_button(
+                        label="📖 Manual del cocinero",
+                        data=manual,
+                        file_name="Manual_del_cocinero.docx",
+                        mime="application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+                        use_container_width=True,
+                        help="Documento Word con una tabla por comida y día, y los nombres de las dietas especiales para rellenar",
+                    )
+            except Exception as e:
+                st.warning(f"No se pudo generar el manual del cocinero: {e}")
         else:
             st.info("No se han seleccionado platos con ingredientes válidos.")
     else:

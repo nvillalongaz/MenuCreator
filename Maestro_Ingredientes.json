@@ -2510,7 +2510,7 @@
     ]
   },
   {
-    "plato": "Ibaialde - Plátano",
+    "plato": "Plátano",
     "tipo_comida": "Merienda",
     "ingredientes_base": [
       {
@@ -2760,7 +2760,7 @@
     ]
   },
   {
-    "plato": "Ibaialde - Bocata de chorizo",
+    "plato": "Bocata de chorizo",
     "tipo_comida": "Merienda",
     "ingredientes_base": [
       {
@@ -2996,46 +2996,6 @@
         "nombre": "Yogur sin lactosa",
         "cantidad": 1.0,
         "unidad": "ud"
-      }
-    ]
-  },
-  {
-    "plato": "Ibaialde - Bocata de Nocilla",
-    "tipo_comida": "Merienda",
-    "ingredientes_base": [
-      {
-        "nombre": "Pan",
-        "cantidad": 0.17,
-        "unidad": "barra"
-      },
-      {
-        "nombre": "Nocilla (sin frutos secos ni gluten)",
-        "cantidad": 0.1,
-        "unidad": "bote"
-      }
-    ],
-    "ingredientes_celiacos": [
-      {
-        "nombre": "Pan sin gluten",
-        "cantidad": 2.0,
-        "unidad": "rebanada"
-      },
-      {
-        "nombre": "Nocilla (sin frutos secos ni gluten)",
-        "cantidad": 0.1,
-        "unidad": "bote"
-      }
-    ],
-    "ingredientes_lactosa": [
-      {
-        "nombre": "Pan",
-        "cantidad": 0.17,
-        "unidad": "barra"
-      },
-      {
-        "nombre": "Nocilla (sin frutos secos ni gluten)",
-        "cantidad": 0.1,
-        "unidad": "bote"
       }
     ]
   },
